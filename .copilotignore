@@ -1,0 +1,8 @@
+# Root .copilotignore
+dist/
+.output/
+node_modules/
+package-lock.json
+*.min.js
+*.log
+.env*

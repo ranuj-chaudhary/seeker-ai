@@ -1,0 +1,33 @@
+# .clineignore — exclude noise from Cline's automatic context (saves tokens)
+# Syntax is identical to .gitignore.
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js build output & cache
+.next/
+out/
+build/
+dist/
+
+# Supabase local artifacts
+supabase/.temp/
+supabase/.branches/
+
+# Env & secrets (keep the example for reference)
+.env
+.env.*
+!.env.example
+
+# Large / generated files not useful for context
+package-lock.json
+*.tsbuildinfo
+next-env.d.ts
+*.min.js
+*.map
+
+# Logs & OS junk
+*.log
+npm-debug.log*
+.DS_Store
